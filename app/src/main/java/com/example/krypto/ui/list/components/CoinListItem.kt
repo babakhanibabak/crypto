@@ -1,4 +1,4 @@
-package com.example.krypto.ui.List.components
+package com.example.krypto.ui.list.components
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.krypto.ui.List.models.CoinListUiModel
+import com.example.krypto.ui.list.models.CoinListUiModel
 import com.example.krypto.ui.theme.KryptoTheme
 
 @Composable

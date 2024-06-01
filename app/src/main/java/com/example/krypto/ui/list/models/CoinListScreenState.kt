@@ -1,4 +1,4 @@
-package com.example.krypto.ui.List.models
+package com.example.krypto.ui.list.models
 
 sealed class CoinListScreenState {
 

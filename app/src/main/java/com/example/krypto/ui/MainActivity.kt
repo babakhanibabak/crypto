@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.krypto.ui.List.CoinListScreen
+import com.example.krypto.ui.list.CoinListScreen
 import com.example.krypto.ui.theme.KryptoTheme
 import dagger.hilt.android.AndroidEntryPoint
 

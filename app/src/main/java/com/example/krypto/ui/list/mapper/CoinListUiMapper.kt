@@ -1,7 +1,7 @@
-package com.example.krypto.ui.List.mapper
+package com.example.krypto.ui.list.mapper
 
 import com.example.krypto.domain.models.CoinListModel
-import com.example.krypto.ui.List.models.CoinListUiModel
+import com.example.krypto.ui.list.models.CoinListUiModel
 import javax.inject.Inject
 
 class CoinListUiMapper @Inject constructor() {

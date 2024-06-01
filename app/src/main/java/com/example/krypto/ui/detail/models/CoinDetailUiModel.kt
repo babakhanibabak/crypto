@@ -1,4 +1,4 @@
-package com.example.krypto.ui.Detail.models
+package com.example.krypto.ui.detail.models
 
 data class CoinDetailUiModel(
     val name: String,

@@ -1,6 +1,4 @@
-package com.example.krypto.ui.Detail.models
-
-import java.lang.Error
+package com.example.krypto.ui.detail.models
 
 data class CoinDetailScreenState(
     val hasError: Boolean = false,

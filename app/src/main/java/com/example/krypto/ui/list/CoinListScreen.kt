@@ -1,4 +1,4 @@
-package com.example.krypto.ui.List
+package com.example.krypto.ui.list
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,9 +29,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.krypto.ui.List.components.CoinListItem
-import com.example.krypto.ui.List.models.CoinListScreenState
-import com.example.krypto.ui.List.models.CoinListUiModel
+import com.example.krypto.ui.list.components.CoinListItem
+import com.example.krypto.ui.list.models.CoinListScreenState
+import com.example.krypto.ui.list.models.CoinListUiModel
 
 @Composable
 fun CoinListScreen(

@@ -1,14 +1,14 @@
-package com.example.krypto.ui.List
+package com.example.krypto.ui.list
 
 import androidx.lifecycle.ViewModel
 import com.example.krypto.domain.usecases.GetCoinListUseCase
-import com.example.krypto.ui.List.models.CoinListScreenState
+import com.example.krypto.ui.list.models.CoinListScreenState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import androidx.lifecycle.viewModelScope
-import com.example.krypto.ui.List.mapper.CoinListUiMapper
+import com.example.krypto.ui.list.mapper.CoinListUiMapper
 import dagger.hilt.android.lifecycle.HiltViewModel
 
 @HiltViewModel

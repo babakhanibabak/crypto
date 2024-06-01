@@ -1,4 +1,4 @@
-package com.example.krypto.ui.Detail
+package com.example.krypto.ui.detail
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
@@ -23,15 +23,25 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.krypto.ui.Detail.models.CoinDetailUiModel
+import com.example.krypto.ui.detail.models.CoinDetailScreenState
+import com.example.krypto.ui.detail.models.CoinDetailUiModel
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CoinDetailScreen(
     viewModel: CoinDetailViewModel = hiltViewModel(),
     onBackClick: () -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
+
+    CoinDetailScreenContent(uiState, onBackClick)
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CoinDetailScreenContent(
+    uiState: CoinDetailScreenState,
+    onBackClick: () -> Unit,
+) {
     Scaffold(
         topBar = {
             TopAppBar(navigationIcon = {
