@@ -40,6 +40,7 @@ fun CoinListScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
+    CoinListScreenContent(uiState = uiState, onItemClick = onItemClick)
 }
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)

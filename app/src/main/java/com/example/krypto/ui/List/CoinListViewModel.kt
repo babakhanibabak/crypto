@@ -9,7 +9,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 import androidx.lifecycle.viewModelScope
 import com.example.krypto.ui.List.mapper.CoinListUiMapper
+import dagger.hilt.android.lifecycle.HiltViewModel
 
+@HiltViewModel
 class CoinListViewModel @Inject constructor(
     private val useCase: GetCoinListUseCase,
     private val uiMapper: CoinListUiMapper
@@ -21,7 +23,7 @@ class CoinListViewModel @Inject constructor(
         _uiState.asStateFlow()
     }
 
-    fun loadData() {
+    private fun loadData() {
         viewModelScope.launch {
             runCatching { useCase.execute() }.onFailure {
                 _uiState.value = CoinListScreenState.Error("خطایی رخ داده ")
@@ -29,7 +31,5 @@ class CoinListViewModel @Inject constructor(
                 _uiState.value = CoinListScreenState.Success(uiMapper.mapToUiModel(it))
             }
         }
-
     }
-
 }
